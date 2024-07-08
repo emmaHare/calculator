@@ -1,0 +1,271 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 7px;
+    margin-top: 200px;
+    padding: 20px;
+    width: 298px;
+}
+
+.display{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    border: 1px solid white;
+    border-radius: 7px;
+    margin-bottom: 12px;
+    padding: 5px 7px;
+    height: 100px;
+    gap: 5px;
+}
+
+.display p{
+    margin: 0px;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.569);
+    font-family: "Megrim";
+    font-size: 1.5rem;
+}
+
+.display h3{
+    margin: 0px;
+    margin-left: auto;
+    color: white;
+    font-family: "Megrim";
+    font-size: 3.5rem;
+    font-weight: 100;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons button{
+    font-size: 1.6rem;
+    font-family: "Megrim";
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+.rm{
+    background-color:rgba(255, 0, 0, 0.115);
+    transition: 0.2s ease-in-out;
+}
+
+.rm:hover{
+    text-shadow: 
+    0 0 10px red;
+    box-shadow:
+    0 0 10px red;
+    color: red;
+    border: 1px solid red;
+}
+
+.rm:active{
+    background-color: red;
+}
+
+.oper{
+    background-color: rgba(72, 0, 255, 0.155);
+    transition: 0.2s ease-in-out;
+}
+
+.oper:hover{
+    text-shadow:
+    0 0 10px rgb(72, 0, 255);
+    box-shadow: 
+    0 0 10px rgb(72, 0, 255);
+    color: rgb(72, 0, 255);
+    border: 1px solid rgb(72, 0, 255);
+}
+
+.oper:active{
+    background-color: rgb(72, 0, 255);
+}
+
+.num{
+    background-color: black;
+    transition: 0.2s ease-in-out;
+}
+
+.num:hover{
+    text-shadow:
+    0 0 10px white;
+    box-shadow:
+    0 0 10px white;  
+}
+
+.num:active{
+    background-color: white;
+    color: black;
+}
+
+.topthird{
+    display: flex;
+    gap: 5px;
+}
+
+.topthird button{
+    width: 108px;
+    height: 70px;
+}
+
+#clearBtn{
+    padding: 10px 10px;
+}
+
+#deleteBtn{
+    padding: 10px 10px;
+}
+
+#divideBtn{
+    height: 70px;
+    width: 70px;
+}
+
+.middlethird{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    gap: 5px;
+}
+
+.middlethird button{
+    height: 70px;
+    width: 70px;
+}
+
+.bottomthird{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottomthird button{
+    height: 70px;
+    width: 70px;
+}
+
+#zeroBtn{
+    width: 145px;
+    height: 70px;
+}
+
+#commaBtn{
+    background-color:rgba(72, 0, 255, 0.155);
+}
+
+#commaBtn:hover{
+    text-shadow:
+    0 0 10px rgb(72, 0, 255);
+    box-shadow: 
+    0 0 10px rgb(72, 0, 255);
+    color: rgb(72, 0, 255);
+    border: 1px solid rgb(72, 0, 255);
+}
+
+#commaBtn:active{
+    background-color: rgb(72, 0, 255);
+}
+
+#equalsBtn{
+    background-color:rgba(0, 255, 255, 0.125);
+    transition: 0.2s ease-in-out;
+}
+
+#equalsBtn:hover{
+    text-shadow:
+    0 0 10px rgb(0, 255, 255);
+    box-shadow:
+    0 0 10px rgb(0, 255, 255);
+    color: rgb(0, 255, 255);
+    border: 1px solid rgb(0, 255, 255);
+}
+
+#equalsBtn:active{
+    background-color: rgb(0, 255, 255);
+}
+
+.mention{
+    color: white;
+    font-family: "Megrim";
+}
+
+.mention a{
+    color: white;
+    text-decoration: none;
+}
+
+.mention a:hover{
+    text-decoration: underline 1px white;
+}
+
+@media screen and (max-width: 380px){
+    .container{
+        margin-top: 120px;
+        width: 257px;
+    }
+    
+    .display{
+        height: 90px;
+    }
+
+    .display p{
+        font-size: 1.3rem;
+    }
+
+    .display h3{
+        font-size: 3.3rem;
+    }
+    
+    .buttons button{
+        font-size: 1.4rem;
+    }
+    
+    .topthird button{
+        width: 94px;
+        height: 60px;
+    }
+
+    #divideBtn{
+        height: 60px;
+        width: 60px;
+    }
+
+    .middlethird button{
+        height: 60px;
+        width: 60px;
+    }
+
+    .bottomthird button{
+        height: 60px;
+        width: 60px;
+    }
+
+    #zeroBtn{
+        height: 60px;
+        width: 126px;
+    }
+}
+
+@media screen and (min-width: 381px) and (max-width: 500px){
+    .container{
+        margin-top: 120px;
+    }
+}
+
+
